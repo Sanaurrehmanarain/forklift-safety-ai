@@ -1,0 +1,5 @@
+path: c:\Users\Yahya\Desktop\My folder\PROJECTS\Deep Learning Projects\AI-powered-warehouse-forklift-safety-monitoring-system\data\processed
+train: images/train
+val: images/val
+names:
+  0: worker

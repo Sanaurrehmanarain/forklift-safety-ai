@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+    <!-- Definitions for gradients -->
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0f172a" />
+            <stop offset="100%" stop-color="#1e293b" />
+        </linearGradient>
+        <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ef4444" />
+            <stop offset="50%" stop-color="#f97316" />
+            <stop offset="100%" stop-color="#22c55e" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="400" fill="url(#bg-gradient)" />
+
+    <!-- Abstract Background Grid / Tech Vibe -->
+    <g stroke="#334155" stroke-width="1" opacity="0.4">
+        <line x1="0" y1="50" x2="1200" y2="50" />
+        <line x1="0" y1="100" x2="1200" y2="100" />
+        <line x1="0" y1="150" x2="1200" y2="150" />
+        <line x1="0" y1="200" x2="1200" y2="200" />
+        <line x1="0" y1="250" x2="1200" y2="250" />
+        <line x1="0" y1="300" x2="1200" y2="300" />
+        <line x1="0" y1="350" x2="1200" y2="350" />
+        <line x1="100" y1="0" x2="100" y2="400" />
+        <line x1="200" y1="0" x2="200" y2="400" />
+        <line x1="300" y1="0" x2="300" y2="400" />
+        <line x1="400" y1="0" x2="400" y2="400" />
+        <line x1="500" y1="0" x2="500" y2="400" />
+        <line x1="600" y1="0" x2="600" y2="400" />
+        <line x1="700" y1="0" x2="700" y2="400" />
+        <line x1="800" y1="0" x2="800" y2="400" />
+        <line x1="900" y1="0" x2="900" y2="400" />
+        <line x1="1000" y1="0" x2="1000" y2="400" />
+        <line x1="1100" y1="0" x2="1100" y2="400" />
+    </g>
+
+    <!-- Abstract Bounding Boxes (Representing Computer Vision) -->
+    <rect x="850" y="80" width="200" height="250" fill="none" stroke="#22c55e" stroke-width="4" stroke-dasharray="10,5" filter="url(#glow)"/>
+    <rect x="950" y="150" width="150" height="200" fill="none" stroke="#ef4444" stroke-width="4" filter="url(#glow)"/>
+    
+    <!-- Zone Polygon Representation -->
+    <polygon points="750,350 1150,350 1050,250 800,250" fill="#ef4444" opacity="0.15" stroke="#ef4444" stroke-width="2" />
+    <text x="760" y="340" font-family="monospace" font-size="14" fill="#ef4444">ALERT: ZONE BREACH</text>
+    
+    <!-- Crosshairs -->
+    <path d="M 950 195 L 950 215 M 940 205 L 960 205" stroke="#fff" stroke-width="2" />
+    <text x="965" y="210" font-family="monospace" font-size="14" fill="#fff">ID: 42</text>
+
+    <!-- Decorative Top Bar -->
+    <rect x="0" y="0" width="1200" height="8" fill="url(#accent-gradient)" />
+
+    <!-- Main Text Elements -->
+    <g transform="translate(80, 160)">
+        <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-1">
+            AI-Powered Warehouse
+        </text>
+        <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-1">
+            Safety Monitoring System
+        </text>
+        <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#94a3b8">
+            Real-time forklift &amp; worker collision prevention using
+        </text>
+        <text x="0" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#94a3b8">
+            Computer Vision, YOLO11, and Spatial Analytics.
+        </text>
+    </g>
+
+    <!-- Tech Stack Pills -->
+    <g transform="translate(80, 330)">
+        <!-- Python -->
+        <rect x="0" y="0" width="100" height="32" rx="16" fill="#3776AB" opacity="0.2" />
+        <rect x="0" y="0" width="100" height="32" rx="16" fill="none" stroke="#3776AB" stroke-width="2" />
+        <text x="50" y="21" font-family="monospace" font-size="14" font-weight="bold" fill="#60A5FA" text-anchor="middle">Python</text>
+
+        <!-- OpenCV -->
+        <rect x="115" y="0" width="100" height="32" rx="16" fill="#5C3EE8" opacity="0.2" />
+        <rect x="115" y="0" width="100" height="32" rx="16" fill="none" stroke="#5C3EE8" stroke-width="2" />
+        <text x="165" y="21" font-family="monospace" font-size="14" font-weight="bold" fill="#A78BFA" text-anchor="middle">OpenCV</text>
+
+        <!-- YOLO11 -->
+        <rect x="230" y="0" width="100" height="32" rx="16" fill="#F7931E" opacity="0.2" />
+        <rect x="230" y="0" width="100" height="32" rx="16" fill="none" stroke="#F7931E" stroke-width="2" />
+        <text x="280" y="21" font-family="monospace" font-size="14" font-weight="bold" fill="#FBBF24" text-anchor="middle">YOLO11</text>
+        
+        <!-- Streamlit -->
+        <rect x="345" y="0" width="110" height="32" rx="16" fill="#FF4B4B" opacity="0.2" />
+        <rect x="345" y="0" width="110" height="32" rx="16" fill="none" stroke="#FF4B4B" stroke-width="2" />
+        <text x="400" y="21" font-family="monospace" font-size="14" font-weight="bold" fill="#F87171" text-anchor="middle">Streamlit</text>
+    </g>
+</svg>
