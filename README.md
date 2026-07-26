@@ -139,8 +139,8 @@ streamlit run app/streamlit/app.py
 ## 3. Download Required Assets
 To run the Streamlit dashboard immediately without retraining the model:
 1. Go to the [Releases Tab](../../releases) on GitHub.
-2. Download `warehouse_assets.zip`.
-3. Extract the contents directly into the root folder of this project (it will automatically populate the `data/` folder).
+2. Download `warehouse_assets.zip` and extract it.
+3. Place `sample_warehouse.mp4` into the `data/videos/` folder.
 
 ### 4. Test the System
 
